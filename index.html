@@ -13,66 +13,159 @@
 </head>
 
 <body>
-    <div id="nav">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Yabin Guo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Work Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Projects
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Events</a>
-                    </li>
-                </ul>
+    <div id="canvas">
+        <div id="nav">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Yabin Guo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Work Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#edu">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skill">Skills</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Projects
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#project-1">Vancouver Housing Market Decoder</a>
+                                <a class="dropdown-item" href="#project-2">Quora Insincere Question Classification</a>
+                                <a class="dropdown-item" href="#project-3">Yelp Dataset Analysis</a>
+                                <a class="dropdown-item" href="#project-4">Pain Level Recognition</a>
+                                <a class="dropdown-item" href="#project-5">Recommendation System</a>
+                                <a class="dropdown-item" href="#project-6">Online Document-Clustering System for Big Data</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div id="introCard">
+                <div class="card" style="width: 18rem;">
+                    <img src="./static/img/headshot.JPG" class="card-img-top" alt="Image not found.">
+                    <div class="card-body">
+                        <h5 class="card-title">Yabin Guo</h5>
+                        <p class="card-text">MSc. in Computer Science</p>
+                        <p class="card-text">British Columbia, Canada</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">xiaosuper163@gmail.com</li>
+                    </ul>
+                    <div class="card-body">
+                        <img src="./static/img/linkedin.jpg" class="smallIcon" onclick="location.href='https://www.linkedin.com/in/yabin-guo-b18489116/'">
+                        <img src="./static/img/github.png" class="smallIcon" onclick="location.href='https://github.com/xiaosuper163'">
+                    </div>
+                </div>
             </div>
-        </nav>
-    </div>
-    <hr>
-    <div id="header">
-        <div class="jumbotron">
-            <h1 class="display-4">Hello, I am Yabin Guo!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         </div>
+        <hr>
+        <div id="header">
+            <div class="jumbotron">
+                <h3>HELLO, I AM</h3>
+                <h1 class="display-4">Yabin Guo.</h1>
+                <br>
+                <br>
+                <br>
+                <p>I am currently working as a data scientist at Vancouver City Savings Credit Union. My interest is in
+                    frontend development and data science. I am seeking for a full time opportunity starting from mid
+                    April. If you are looking for a frondend developer or a data scientist, please don't hesitate to
+                    reach out to me! Want to know more about me? </p>
+                <br>
+                <input type="button" class="btn btn-success" value="Learn more" onclick="location.href='#'">
+            </div>
+        </div>
+        <hr>
+        <div id="content">
+            <nav id="navbar-example3" class="navbar navbar-light bg-light">
+                <!-- <a class="navbar-brand" href="#">List of Content</a> -->
+                <nav class="nav nav-pills flex-column">
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#work">Work Experience</a>
+                    <a class="nav-link" href="#edu">Education</a>
+                    <a class="nav-link" href="#skill">Skills</a>
+                    <a class="nav-link" href="#project">Projects</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" href="#project-1">Vancouver Housing Market Decoder</a>
+                        <a class="nav-link ml-3 my-1" href="#project-2">Quora Insincere Question Classification</a>
+                        <a class="nav-link ml-3 my-1" href="#project-3">Yelp Dataset Analysis</a>
+                        <a class="nav-link ml-3 my-1" href="#project-4">Pain Level Recognition</a>
+                        <a class="nav-link ml-3 my-1" href="#project-5">Recommendation System</a>
+                        <a class="nav-link ml-3 my-1" href="#project-6">Online Document-Clustering System for Big Data</a>
+                    </nav>
+                    <a class="nav-link" href="#event">Events</a>
+                </nav>
+            </nav>
+
+            <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+                <h4 id="about">About</h4>
+                <p>...</p>
+                <h4 id="work">Work Experience</h4>
+                <p>
+                        Data Scientist, Vancouver City Savings Credit Union May 2018--Present
+                        Member Attrition Model: built an end to end pipeline to predict how likely a member will disengage by using deep learning, xgboost, and lightgbm; improved the average precision of the model from 0.42 to 0.64
+                        Cheque Fraud Detection Model: built a machine learning pipeline by using lightgbm to flag members who are more likely to commit a cheque fraud
+                        New Opportunity: analyzed the member transaction history and captured new opportunities; initialized a two-week long pilot campaign by using Microsoft Customer Management System; analyzed the result of a two-month campaign pilot for this project
+                        Data obfuscation: implemented Microsoft SQL server stored procedures to transform and obfuscate the member private data
+                </p>
+                <h4 id="edu">Education</h4>
+                <p>M.Sc in Computing Science</p>
+                <p>Professional Masters in Big Data</p>
+                <p>Simon Fraser University, BC, Canada</p>
+                <p>GPA 4.15/4.33</p>
+                <p>September 2017 - December 2018</p>
+                <p>M.Sc in Chemistry</p>
+                <p>University of British Columbia, BC, Canada</p>
+                <p>September 2014 - April 2017</p>
+                <p>B.Sc in Chemistry</p>
+                <p>Nankai Univeristy, China</p>
+                Top 7% in graduating class
+                <p>September 2010 - June 2014</p>
+                <h4 id="skill">Skills</h4>
+                <p>Python, SQL, CSS/HTML, JavaScript, R, Igor, C/C++, Java. Microsoft SQL server / MySQL /
+                    Cassandra / Mongodb database, PowerBI, Apache Hadoop, Apache
+                    Spark, Git, jQuery, Amazon Web Service, Google Compute Engine, Matlab, LaTeX</p>
+                <h4 id="project">Projects</h4>
+                <h5 id="project-1">Vancouver Housing Market Decoder</h5>
+                <p>Implemented a web scraping script to collect selling prices and detailed information of housing properties; applied various machine learning algorithms to predict the listing price and selling price; built an interactive web application with python Flask framework.</p>
+                <h5 id="project-2">Quora Insincere Question Classification</h5>
+                <p>Implemented a multi-input deep LSTM model with Keras to classify whether a question is sincere or not; incorporated topic modeling algorithm to achieve better f1 score; ranking at top 15% out to ~2000 teams currently.</p>
+                <h5 id="project-3">Yelp Dataset Analysis</h5>
+                <p>Applied LDA to extract the topics from the text review and created a scalable recommendation system; built an interactive web application.</p>
+                <h5 id="project-4">Pain Level Recognition</h5>
+                <p>Applied various machine learning and deep learning algorithms to classify pain level based on bio-sensor signals; achieved better accuracy than published article.</p>
+                <h5 id="project-5">Recommendation System</h5>
+                <p>Designed a recommendation system to predict numerical ratings; ranked the 2nd place in kaggle in-class competition leader board.</p>
+                <h5 id="project-6">Online Document-Clustering System for Big Data</h5>
+                <p>Deployed Cloudera manager on a five-node cluster from five virtual machine instances configured with CloudStack; implemented a scalable online document-clustering system based on Kafka and Spark Streaming.</p>
+                <h4 id="event">Events</h4>
+                <p>
+                    People Before Profit Hackathon Hosted By Vancity: won the second prize; implemented a web application which allows users to take photo of the garbage they want to throw and choose the label of the garbage; other users can evaluate whether the labels are correct.
+                </p>
+                <p>
+                    Account Takeover Fraud Detection AI Competition held by TIANCHI, Ant Financial: built a predictive machine learning model with MaxCompute SQL and PAI on Alibaba Cloud computing platform to predict transactions with high risk of account taking over; successfully entered the second round; ranked 50/650
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div id="footer">Footer</div>
+
     </div>
-    <hr>
-    <div id="content">
-        <h1>About</h1>
-        <h1>Work Experience</h1>
-        <h1>Education</h1>
-        <h1>Skills</h1>
-        <h1>Projects</h1>
-        <h1>Events</h1>
-    </div>
-    <hr>
-    <div id="footer">Footer</div>
 </body>
 
 </html>

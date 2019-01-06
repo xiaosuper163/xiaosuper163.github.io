@@ -3,20 +3,50 @@ html, body, div, ul, li, p {
     margin: 0;
 }
 
-/* .navbar {
-    position: fixed;
+#canvas {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#nav {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: auto; */
+    border-top: 5px solid orange;
+    text-align: center;
+}
+
+#introCard {
     float: right;
-} */
+    width: auto;
+    height: auto;
+    /* border: 1px dashed red; */
+    margin-top: 32px;
+}
 
 #header {
-    height: 820px;
-    width: 1150px;
+    width: 70%;
+    height: auto;
 }
 
 .jumbotron {
     background-image: url("../img/header-background.JPG");
-    height: 800px;
-    background-size: 100% 100%;
+    height: auto;
+    background-size: 100% auto;
     background-position-y: 0;
     background-repeat: no-repeat;
+    color: white;
+}
+
+.smallIcon {
+    width:50px;
+    height:30px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#navbar-example3 {
+    float: right;
 }
