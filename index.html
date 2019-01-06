@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yabin Guo's personal page</title>
-    <script src="./static/js/jquery-1.12.4.js"></script>
-    <script src="./static/js/bootstrap.js"></script>
     <link rel="stylesheet" href="./static/css/bootstrap.css">
     <link rel="stylesheet" href="./static/css/style.css">
+    <script src="./static/js/jquery-1.12.4.js"></script>
+    <script src="./static/js/bootstrap.js"></script>
+    <script src="./static/js/index.js"></script>
 </head>
 
 <body>
+
     <div id="canvas">
         <div id="nav">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -46,7 +48,8 @@
                                 <a class="dropdown-item" href="#project-3">Yelp Dataset Analysis</a>
                                 <a class="dropdown-item" href="#project-4">Pain Level Recognition</a>
                                 <a class="dropdown-item" href="#project-5">Recommendation System</a>
-                                <a class="dropdown-item" href="#project-6">Online Document-Clustering System for Big Data</a>
+                                <a class="dropdown-item" href="#project-6">Online Document-Clustering System for Big
+                                    Data</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -55,26 +58,25 @@
                     </ul>
                 </div>
             </nav>
-
-            <div id="introCard">
-                <div class="card" style="width: 18rem;">
-                    <img src="./static/img/headshot.JPG" class="card-img-top" alt="Image not found.">
-                    <div class="card-body">
-                        <h5 class="card-title">Yabin Guo</h5>
-                        <p class="card-text">MSc. in Computer Science</p>
-                        <p class="card-text">British Columbia, Canada</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">xiaosuper163@gmail.com</li>
-                    </ul>
-                    <div class="card-body">
-                        <img src="./static/img/linkedin.jpg" class="smallIcon" onclick="location.href='https://www.linkedin.com/in/yabin-guo-b18489116/'">
-                        <img src="./static/img/github.png" class="smallIcon" onclick="location.href='https://github.com/xiaosuper163'">
-                    </div>
+        </div>
+        <hr>
+        <div id="introCard">
+            <div class="card" style="width: 18rem;">
+                <img src="./static/img/headshot.JPG" class="card-img-top" alt="Image not found.">
+                <div class="card-body">
+                    <h5 class="card-title">Yabin Guo</h5>
+                    <p class="card-text">MSc. in Computer Science</p>
+                    <p class="card-text">British Columbia, Canada</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">xiaosuper163@gmail.com</li>
+                </ul>
+                <div class="card-body">
+                    <img src="./static/img/linkedin.jpg" class="smallIcon" onclick="location.href='https://www.linkedin.com/in/yabin-guo-b18489116/'">
+                    <img src="./static/img/github.png" class="smallIcon" onclick="location.href='https://github.com/xiaosuper163'">
                 </div>
             </div>
         </div>
-        <hr>
         <div id="header">
             <div class="jumbotron">
                 <h3>HELLO, I AM</h3>
@@ -87,7 +89,7 @@
                     April. If you are looking for a frondend developer or a data scientist, please don't hesitate to
                     reach out to me! Want to know more about me? </p>
                 <br>
-                <input type="button" class="btn btn-success" value="Learn more" onclick="location.href='#'">
+                <input type="button" class="btn btn-success" value="Learn more" onclick="location.href='#about'">
             </div>
         </div>
         <hr>
@@ -117,11 +119,17 @@
                 <p>...</p>
                 <h4 id="work">Work Experience</h4>
                 <p>
-                        Data Scientist, Vancouver City Savings Credit Union May 2018--Present
-                        Member Attrition Model: built an end to end pipeline to predict how likely a member will disengage by using deep learning, xgboost, and lightgbm; improved the average precision of the model from 0.42 to 0.64
-                        Cheque Fraud Detection Model: built a machine learning pipeline by using lightgbm to flag members who are more likely to commit a cheque fraud
-                        New Opportunity: analyzed the member transaction history and captured new opportunities; initialized a two-week long pilot campaign by using Microsoft Customer Management System; analyzed the result of a two-month campaign pilot for this project
-                        Data obfuscation: implemented Microsoft SQL server stored procedures to transform and obfuscate the member private data
+                    Data Scientist, Vancouver City Savings Credit Union May 2018--Present
+                    Member Attrition Model: built an end to end pipeline to predict how likely a member will disengage
+                    by using deep learning, xgboost, and lightgbm; improved the average precision of the model from
+                    0.42 to 0.64
+                    Cheque Fraud Detection Model: built a machine learning pipeline by using lightgbm to flag members
+                    who are more likely to commit a cheque fraud
+                    New Opportunity: analyzed the member transaction history and captured new opportunities;
+                    initialized a two-week long pilot campaign by using Microsoft Customer Management System; analyzed
+                    the result of a two-month campaign pilot for this project
+                    Data obfuscation: implemented Microsoft SQL server stored procedures to transform and obfuscate the
+                    member private data
                 </p>
                 <h4 id="edu">Education</h4>
                 <p>M.Sc in Computing Science</p>
@@ -142,30 +150,45 @@
                     Spark, Git, jQuery, Amazon Web Service, Google Compute Engine, Matlab, LaTeX</p>
                 <h4 id="project">Projects</h4>
                 <h5 id="project-1">Vancouver Housing Market Decoder</h5>
-                <p>Implemented a web scraping script to collect selling prices and detailed information of housing properties; applied various machine learning algorithms to predict the listing price and selling price; built an interactive web application with python Flask framework.</p>
+                <p>Implemented a web scraping script to collect selling prices and detailed information of housing
+                    properties; applied various machine learning algorithms to predict the listing price and selling
+                    price; built an interactive web application with python Flask framework.</p>
+                <iframe src="https://www.youtube.com/embed/slVJ6vCAlEI" width="560" height="315" frameborder="0"></iframe>
                 <h5 id="project-2">Quora Insincere Question Classification</h5>
-                <p>Implemented a multi-input deep LSTM model with Keras to classify whether a question is sincere or not; incorporated topic modeling algorithm to achieve better f1 score; ranking at top 15% out to ~2000 teams currently.</p>
+                <p>Implemented a multi-input deep LSTM model with Keras to classify whether a question is sincere or
+                    not; incorporated topic modeling algorithm to achieve better f1 score; ranking at top 15% out to
+                    ~2000 teams currently.</p>
                 <h5 id="project-3">Yelp Dataset Analysis</h5>
-                <p>Applied LDA to extract the topics from the text review and created a scalable recommendation system; built an interactive web application.</p>
+                <p>Applied LDA to extract the topics from the text review and created a scalable recommendation system;
+                    built an interactive web application.</p>
                 <h5 id="project-4">Pain Level Recognition</h5>
-                <p>Applied various machine learning and deep learning algorithms to classify pain level based on bio-sensor signals; achieved better accuracy than published article.</p>
+                <p>Applied various machine learning and deep learning algorithms to classify pain level based on
+                    bio-sensor signals; achieved better accuracy than published article.</p>
                 <h5 id="project-5">Recommendation System</h5>
-                <p>Designed a recommendation system to predict numerical ratings; ranked the 2nd place in kaggle in-class competition leader board.</p>
+                <p>Designed a recommendation system to predict numerical ratings; ranked the 2nd place in kaggle
+                    in-class competition leader board.</p>
                 <h5 id="project-6">Online Document-Clustering System for Big Data</h5>
-                <p>Deployed Cloudera manager on a five-node cluster from five virtual machine instances configured with CloudStack; implemented a scalable online document-clustering system based on Kafka and Spark Streaming.</p>
+                <p>Deployed Cloudera manager on a five-node cluster from five virtual machine instances configured with
+                    CloudStack; implemented a scalable online document-clustering system based on Kafka and Spark
+                    Streaming.</p>
                 <h4 id="event">Events</h4>
                 <p>
-                    People Before Profit Hackathon Hosted By Vancity: won the second prize; implemented a web application which allows users to take photo of the garbage they want to throw and choose the label of the garbage; other users can evaluate whether the labels are correct.
+                    People Before Profit Hackathon Hosted By Vancity: won the second prize; implemented a web
+                    application which allows users to take photo of the garbage they want to throw and choose the label
+                    of the garbage; other users can evaluate whether the labels are correct.
                 </p>
                 <p>
-                    Account Takeover Fraud Detection AI Competition held by TIANCHI, Ant Financial: built a predictive machine learning model with MaxCompute SQL and PAI on Alibaba Cloud computing platform to predict transactions with high risk of account taking over; successfully entered the second round; ranked 50/650
+                    Account Takeover Fraud Detection AI Competition held by TIANCHI, Ant Financial: built a predictive
+                    machine learning model with MaxCompute SQL and PAI on Alibaba Cloud computing platform to predict
+                    transactions with high risk of account taking over; successfully entered the second round; ranked
+                    50/650
                 </p>
             </div>
         </div>
         <hr>
         <div id="footer">Footer</div>
-
     </div>
+    <img src="./static/img/backtotop.jpg" id="backToTop">
 </body>
 
 </html>
