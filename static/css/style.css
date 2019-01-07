@@ -19,6 +19,7 @@ html, body, div, ul, li, p {
 
 #introCard {
     float: right;
+    max-width: 35%;
     width: auto;
     height: auto;
     /* border: 1px dashed red; */
@@ -28,6 +29,7 @@ html, body, div, ul, li, p {
 #header {
     width: 70%;
     height: auto;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 .jumbotron {
