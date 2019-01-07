@@ -47,16 +47,63 @@ html, body, div, ul, li, p {
     padding-right: 10px;
 }
 
-#navbar-example3 {
+#sideBar {
+    max-width: 35%;
     float: right;
+    font-family: 'Staatliches', cursive;
+    border: 0.5px solid lightgrey;
+}
+
+.nav-link:hover {
+    background-color: antiquewhite;
+}
+
+.myAc {
+    list-style: none;
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 60%;
+    width: auto;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.ac-item-hd {
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    color: royalblue;
+}
+
+.ac-item-hd, .ac-item-bd {
+    min-height: 25px;
+    height: auto;
+    line-height: 25px;
+    border: 0.5px solid lightgrey;
+}
+
+ul li .ac-item-bd {
+    height: auto;
+    display: none;
+    padding: 5px;
 }
 
 #backToTop {
-    width: 54px;
-    height: 54px;
+    width: 8%;
+    height: auto;
     position: fixed;
-    left: 90%;
-    bottom: 10%;
-    border: 2px solid rgb(187, 39, 89);
+    right: 1%;
+    bottom: 0;
     cursor: pointer;
+}
+
+#footer {
+    text-align: center;
+    min-height: 50;
+    height: auto;
+    line-height: 50px;
+    background-color: lightpink;
+    font-family: 'Pacifico', cursive;
 }
