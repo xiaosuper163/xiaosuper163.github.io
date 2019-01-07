@@ -8,6 +8,7 @@
     <title>Yabin Guo's personal page</title>
     <link rel="stylesheet" href="./static/css/bootstrap.css">
     <link rel="stylesheet" href="./static/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Shrikhand|Staatliches|Ultra" rel="stylesheet">
     <script src="./static/js/jquery-1.12.4.js"></script>
     <script src="./static/js/bootstrap.js"></script>
     <script src="./static/js/index.js"></script>
@@ -16,7 +17,7 @@
 <body>
 
     <div id="canvas">
-        <div id="nav">
+        <div id="nav" style="font-family: 'Courgette', cursive">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">Yabin Guo</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -64,7 +65,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="./static/img/headshot.JPG" class="card-img-top" alt="Image not found.">
                 <div class="card-body">
-                    <h5 class="card-title">Yabin Guo</h5>
+                    <h5 class="card-title" style="font-family: 'Dancing Script', cursive"><strong>Yabin Guo</strong></h5>
                     <p class="card-text">MSc. in Computer Science</p>
                     <p class="card-text">British Columbia, Canada</p>
                 </div>
@@ -72,7 +73,8 @@
                     <li class="list-group-item">xiaosuper163@gmail.com</li>
                 </ul>
                 <div class="card-body">
-                    <a href="https://www.linkedin.com/in/yabin-guo-b18489116/"><img src="./static/img/linkedin.jpg" class="smallIcon"></a>
+                    <a href="https://www.linkedin.com/in/yabin-guo-b18489116/"><img src="./static/img/linkedin.jpg"
+                            class="smallIcon"></a>
                     <a href="https://github.com/xiaosuper163"><img src="./static/img/github.png" class="smallIcon"></a>
                 </div>
             </div>
@@ -80,7 +82,7 @@
         <div id="header">
             <div class="jumbotron">
                 <h3>HELLO, I AM</h3>
-                <h1 class="display-4">Yabin Guo.</h1>
+                <h1 class="display-4" style="font-family: 'Dancing Script', cursive">Yabin Guo.</h1>
                 <br>
                 <br>
                 <br>
@@ -94,7 +96,7 @@
         </div>
         <hr>
         <div id="content">
-            <nav id="navbar-example3" class="navbar navbar-light bg-light">
+            <nav id="navbar-example3" class="navbar navbar-light bg-light" style="font-family: 'Staatliches', cursive">
                 <!-- <a class="navbar-brand" href="#">List of Content</a> -->
                 <nav class="nav nav-pills flex-column">
                     <a class="nav-link" href="#about">About</a>
@@ -115,23 +117,27 @@
             </nav>
 
             <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-                <h4 id="about">About</h4>
+                <h4 id="about" style="font-family: 'Shrikhand', cursive">About</h4>
                 <p>...</p>
-                <h4 id="work">Work Experience</h4>
+                <h4 id="work" style="font-family: 'Shrikhand', cursive">Work Experience</h4>
                 <p>
-                    Data Scientist, Vancouver City Savings Credit Union May 2018--Present
-                    Member Attrition Model: built an end to end pipeline to predict how likely a member will disengage
-                    by using deep learning, xgboost, and lightgbm; improved the average precision of the model from
-                    0.42 to 0.64
-                    Cheque Fraud Detection Model: built a machine learning pipeline by using lightgbm to flag members
-                    who are more likely to commit a cheque fraud
-                    New Opportunity: analyzed the member transaction history and captured new opportunities;
-                    initialized a two-week long pilot campaign by using Microsoft Customer Management System; analyzed
-                    the result of a two-month campaign pilot for this project
-                    Data obfuscation: implemented Microsoft SQL server stored procedures to transform and obfuscate the
-                    member private data
+                    Data Scientist, Vancouver City Savings Credit Union, May 2018--Present <br>
+                    This is the first job in my life. At Vancity, I participated in several projects. Here is a list of
+                    them.<br>
+                    <ul>
+                        <li>Member Attrition Model: built an end to end pipeline to predict how likely a member will
+                        disengage by using deep learning, xgboost, and lightgbm; improved the average precision of the model from
+                        0.42 to 0.64</li>
+                        <li>Cheque Fraud Detection Model: built a machine learning pipeline by using lightgbm to flag
+                        members who are more likely to commit a cheque fraud</li>
+                        <li>New Opportunity: analyzed the member transaction history and captured new opportunities;
+                        initialized a two-week long pilot campaign by using Microsoft Customer Management System;
+                        analyzed the result of a two-month campaign pilot for this project</li>
+                        <li>Data obfuscation: implemented Microsoft SQL server stored procedures to transform and obfuscate
+                        the member private data</li>
+                    </ul>
                 </p>
-                <h4 id="edu">Education</h4>
+                <h4 id="edu" style="font-family: 'Shrikhand', cursive">Education</h4>
                 <p>M.Sc in Computing Science</p>
                 <p>Professional Masters in Big Data</p>
                 <p>Simon Fraser University, BC, Canada</p>
@@ -144,34 +150,34 @@
                 <p>Nankai Univeristy, China</p>
                 Top 7% in graduating class
                 <p>September 2010 - June 2014</p>
-                <h4 id="skill">Skills</h4>
+                <h4 id="skill" style="font-family: 'Shrikhand', cursive">Skills</h4>
                 <p>Python, SQL, CSS/HTML, JavaScript, R, Igor, C/C++, Java. Microsoft SQL server / MySQL /
                     Cassandra / Mongodb database, PowerBI, Apache Hadoop, Apache
                     Spark, Git, jQuery, Amazon Web Service, Google Compute Engine, Matlab, LaTeX</p>
-                <h4 id="project">Projects</h4>
-                <h5 id="project-1">Vancouver Housing Market Decoder</h5>
+                <h4 id="project" style="font-family: 'Shrikhand', cursive">Projects</h4>
+                <h5 id="project-1" style="font-family: 'Ultra', serif">Vancouver Housing Market Decoder</h5>
                 <p>Implemented a web scraping script to collect selling prices and detailed information of housing
                     properties; applied various machine learning algorithms to predict the listing price and selling
                     price; built an interactive web application with python Flask framework.</p>
                 <iframe src="https://www.youtube.com/embed/slVJ6vCAlEI" width="560" height="315" frameborder="0"></iframe>
-                <h5 id="project-2">Quora Insincere Question Classification</h5>
+                <h5 id="project-2" style="font-family: 'Ultra', serif">Quora Insincere Question Classification</h5>
                 <p>Implemented a multi-input deep LSTM model with Keras to classify whether a question is sincere or
                     not; incorporated topic modeling algorithm to achieve better f1 score; ranking at top 15% out to
                     ~2000 teams currently.</p>
-                <h5 id="project-3">Yelp Dataset Analysis</h5>
+                <h5 id="project-3" style="font-family: 'Ultra', serif">Yelp Dataset Analysis</h5>
                 <p>Applied LDA to extract the topics from the text review and created a scalable recommendation system;
                     built an interactive web application.</p>
-                <h5 id="project-4">Pain Level Recognition</h5>
+                <h5 id="project-4" style="font-family: 'Ultra', serif">Pain Level Recognition</h5>
                 <p>Applied various machine learning and deep learning algorithms to classify pain level based on
                     bio-sensor signals; achieved better accuracy than published article.</p>
-                <h5 id="project-5">Recommendation System</h5>
+                <h5 id="project-5" style="font-family: 'Ultra', serif">Recommendation System</h5>
                 <p>Designed a recommendation system to predict numerical ratings; ranked the 2nd place in kaggle
                     in-class competition leader board.</p>
-                <h5 id="project-6">Online Document-Clustering System for Big Data</h5>
+                <h5 id="project-6" style="font-family: 'Ultra', serif">Online Document-Clustering System for Big Data</h5>
                 <p>Deployed Cloudera manager on a five-node cluster from five virtual machine instances configured with
                     CloudStack; implemented a scalable online document-clustering system based on Kafka and Spark
                     Streaming.</p>
-                <h4 id="event">Events</h4>
+                <h4 id="event" style="font-family: 'Shrikhand', cursive">Events</h4>
                 <p>
                     People Before Profit Hackathon Hosted By Vancity: won the second prize; implemented a web
                     application which allows users to take photo of the garbage they want to throw and choose the label
@@ -186,7 +192,7 @@
             </div>
         </div>
         <hr>
-        <div id="footer">Footer</div>
+        <div id="footer">Copyright &copy Yabin Guo. Created with css3/html5, jQuery, JavaScript, google fonts, bootstrap.</div>
     </div>
     <img src="./static/img/backtotop.jpg" id="backToTop">
 </body>
