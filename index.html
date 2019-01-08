@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Yabin Guo's personal page</title>
+    <title>Yabin Guo's MainPage</title>
     <link rel="stylesheet" href="./static/css/bootstrap.css">
     <link rel="stylesheet" href="./static/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Shrikhand|Staatliches|Ultra|Pacifico|Poiret+One|Didact+Gothic"
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Shrikhand|Staatliches|Ultra|Pacifico|Poiret+One|Didact+Gothic|IBM+Plex+Sans"
         rel="stylesheet">
     <script src="./static/js/jquery-1.12.4.js"></script>
     <script src="./static/js/bootstrap.js"></script>
@@ -62,38 +62,35 @@
             </nav>
         </div>
         <hr>
-        <div id="introCard">
-            <div class="card" style="width: 18rem;">
-                <img src="./static/img/headshot.JPG" class="card-img-top" alt="Image not found.">
-                <div class="card-body">
-                    <h5 class="card-title" style="font-family: 'Dancing Script', cursive"><strong>Yabin Guo</strong></h5>
-                    <p class="card-text">MSc. in Computer Science</p>
-                    <p class="card-text">British Columbia, Canada</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">xiaosuper163@gmail.com</li>
-                </ul>
-                <div class="card-body">
-                    <a href="https://www.linkedin.com/in/yabin-guo-b18489116/" target="none"><img src="./static/img/linkedin.jpg"
-                            class="smallIcon"></a>
-                    <a href="https://github.com/xiaosuper163" target="none"><img src="./static/img/github.png" class="smallIcon"></a>
-                </div>
+        <div class="card" id="introCard">
+            <img src="./static/img/headshot.JPG" class="card-img-top" alt="Image not found.">
+            <div class="card-body">
+                <h5 class="card-title" style="font-family: 'Dancing Script', cursive"><strong>Yabin Guo</strong></h5>
+                <p class="card-text">MSc. in Computer Science</p>
+                <p class="card-text">British Columbia, Canada</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">xiaosuper163@gmail.com</li>
+            </ul>
+            <div class="card-body">
+                <a href="https://www.linkedin.com/in/yabin-guo-b18489116/" target="none"><img src="./static/img/linkedin.jpg"
+                        class="smallIcon"></a>
+                <a href="https://github.com/xiaosuper163" target="none"><img src="./static/img/github.png" class="smallIcon"></a>
             </div>
         </div>
-        <div id="header">
-            <div class="jumbotron">
-                <h3 style="text-align: right">HELLO, I AM</h3>
-                <h1 class="display-4" style="font-family: 'Dancing Script', cursive; text-align: right">Yabin Guo.</h1>
-                <br>
-                <br>
-                <br>
-                <p>I am currently working as a data scientist at Vancouver City Savings Credit Union. My interest is in
-                    frontend development and data science. I am seeking for a full time opportunity starting from mid
-                    April. If you are looking for an ambitious frondend developer or data scientist, please don't hesitate to
-                    contact me! Want to know more about me?</p>
-                <br>
-                <input type="button" class="btn btn-success" value="Learn more" onclick="location.href='#about'">
-            </div>
+        <div class="jumbotron" id="header">
+            <h3 style="text-align: right">HELLO, I AM</h3>
+            <h1 class="myName">Yabin Guo.</h1>
+            <br>
+            <br>
+            <br>
+            <p id="introText">I am currently working as a data scientist at Vancouver City Savings Credit Union. My interest is in
+                data science and frontend development. I am seeking for a full time opportunity starting from mid
+                April. If you are looking for an ambitious frondend developer or data scientist, please don't
+                hesitate to
+                contact me! Want to know more about me?</p>
+            <br>
+            <input type="button" class="btn btn-success" value="Learn more" onclick="location.href='#about'">
         </div>
         <hr>
         <div id="content">
@@ -118,9 +115,10 @@
                 <h4 id="work" style="font-family: 'Shrikhand', cursive">Work Experience</h4>
 
                 <p>
-                    Data Scientist, Vancouver City Savings Credit Union, May 2018 -- Present <br>
-                    This is the first job in my life. At Vancity, I participated in several projects. Here is a list of
-                    them.<br>
+                    Data Scientist, <br>
+                    Vancouver City Savings Credit Union, <br>
+                    May 2018 - Present <br>
+                    This is the first job in my life. At Vancity, I participated in several projects. Throughout each project, I gained experience of building predictive models and conducting data analysis. At meanwhile, my manager helped me a lot on building my business acumen. Here is the list of projects. Please click each one to see more details.<br>
                 </p>
                 <ul class="myAc">
                     <li class="ac-item">
@@ -170,7 +168,7 @@
                 <p>Implemented a web scraping script to collect selling prices and detailed information of housing
                     properties; applied various machine learning algorithms to predict the listing price and selling
                     price; built an interactive web application with python Flask framework.</p>
-                <iframe src="https://www.youtube.com/embed/slVJ6vCAlEI" width="560" height="315" frameborder="0"></iframe>
+                <iframe src="https://www.youtube.com/embed/slVJ6vCAlEI" frameborder="0" id="VMHC"></iframe>
                 <h5 id="project-2" style="font-family: 'Ultra', serif">Quora Insincere Question Classification</h5>
                 <p>Implemented a multi-input deep LSTM model with Keras to classify whether a question is sincere or
                     not; incorporated topic modeling algorithm to achieve better f1 score; ranking at top 15% out to
