@@ -98,10 +98,19 @@ p {
     color: royalblue;
 }
 
+.ac-item-hd:hover {
+    background-color: lightgoldenrodyellow;
+    border: 2px solid palegoldenrod;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.2em;
+    color: black;
+}
+
 .ac-item-hd, .ac-item-bd {
-    min-height: 25px;
+    min-height: 28px;
     height: auto;
-    line-height: 25px;
+    line-height: 28px;
     border: 0.5px solid lightgrey;
     border-radius: 0.3rem;
 }

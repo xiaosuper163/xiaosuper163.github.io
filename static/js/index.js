@@ -19,23 +19,29 @@ $(function() {
     $(".myAc > :first-child").children(".ac-item-hd").trigger("click");
 
     // specific for small phone screen
-    if (parseFloat($("#canvas").css("width")) <= 332) {
-        console.log(1);
-        var newWidth = $("#canvas").css("width");
-        $("#introCard").css("width", newWidth);
-        $("#introCard").css("max-width", newWidth);
-        $("#introCard").css("float", "initial");
-        $("#header").css("max-width", newWidth);
-        $('#header').css("background-size", "100% auto");
-        // hide the navigation bar in the body
-        $("#sideBar").css("display", "none");
-
-        // change the size of the iframe
-        $("#VMHC").css("width", newWidth);
-        $("#VMHC").css("height", "auto");
-
-        // change the size of the accordion
-        $(".myAc").css("max-width", newWidth);
+    // wrap the code into a resize event handler
+    function resizeHandler() {
+        if (parseFloat($("#canvas").css("width")) <= 332) {
+            console.log(1);
+            var newWidth = $("#canvas").css("width");
+            $("#introCard").css("width", newWidth);
+            $("#introCard").css("max-width", newWidth);
+            $("#introCard").css("float", "initial");
+            $("#header").css("max-width", newWidth);
+            $('#header').css("background-size", "100% auto");
+            // hide the navigation bar in the body
+            $("#sideBar").css("display", "none");
+    
+            // change the size of the iframe
+            $("#VMHC").css("width", newWidth);
+            $("#VMHC").css("height", "auto");
+    
+            // change the size of the accordion
+            $(".myAc").css("max-width", newWidth);
+        }
     }
+
+    $("html").on("resize", resizeHandler);
+    $("html").trigger("resize");
 
 });
