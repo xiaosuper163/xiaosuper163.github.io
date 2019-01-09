@@ -39,6 +39,10 @@ $(function() {
     
             // change the size of the accordion
             $(".myAc").css("max-width", newWidth);
+
+            $("#footer").css("min-height", "30px");
+            $("#footer").css("line-height", "30px");
+            $("#footer").css("font-size", "8px");
         }
     }
 
