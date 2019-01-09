@@ -36,6 +36,10 @@ p {
     text-align: center;
 }
 
+.card-text {
+    text-align: center;
+}
+
 #header {
     max-width: 70%;
     height: auto;
@@ -121,10 +125,16 @@ ul li .ac-item-bd {
     padding: 5px;
 }
 
+.project-title {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* 
 #VHMC {
     width: auto;
     height: auto;
-}
+    margin: 0 auto;
+} */
 
 #backToTop {
     width: 8%;
@@ -133,6 +143,8 @@ ul li .ac-item-bd {
     right: 1%;
     bottom: 0;
     cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #footer {

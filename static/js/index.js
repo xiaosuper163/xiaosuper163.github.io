@@ -34,6 +34,7 @@ $(function() {
     
             // change the size of the iframe
             $("#VMHC").css("width", newWidth);
+            $("#VMHC").css("max-width", newWidth);
             $("#VMHC").css("height", "auto");
     
             // change the size of the accordion
