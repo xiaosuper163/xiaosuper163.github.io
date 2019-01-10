@@ -38,11 +38,12 @@ $(function() {
             $("#VMHC").css("height", "auto");
     
             // change the size of the accordion
-            $(".myAc").css("max-width", newWidth);
+            $(".myAc").css("left", 0);
+			$(".myAc").css("width", "100%");
 
             $("#footer").css("min-height", "30px");
             $("#footer").css("line-height", "30px");
-            $("#footer").css("font-size", "8px");
+            $("#footer").css("font-size", "6px");
         }
     }
 

@@ -84,14 +84,19 @@ p {
     background-color: antiquewhite;
 }
 
+#textBody {
+	position: relative;
+}
+
 .myAc {
     list-style: none;
-    /* margin: 0 auto; */
-    /* text-align: center; */
-    margin-top: 20px;
+	/* trigger BFC to avoid overlapping with #sideBar*/
+    display: inline-block;
+    /*margin-top: 10px;*/
     margin-bottom: 20px;
-    max-width: 60%;
-    width: auto;
+    position: relative;
+	left: 10%;
+    width: 80%;
     font-family: 'Didact Gothic', sans-serif;
 }
 
@@ -104,11 +109,11 @@ p {
 }
 
 .ac-item-hd:hover {
-    background-color: lightgoldenrodyellow;
-    border: 2px solid palegoldenrod;
-    height: 35px;
-    line-height: 35px;
-    font-size: 1.2em;
+    background-color: lightgrey;
+    border: 0.5px solid blue;
+    /*height: 35px;*/
+    /*line-height: 35px;*/
+    /*font-size: 1.2em;*/
     color: black;
 }
 
