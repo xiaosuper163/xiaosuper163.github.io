@@ -26,8 +26,11 @@ p {
     text-align: center;
 }
 
+
 #introCard {
     float: right;
+	/* make it compatible for IE11; image gets stretched otherwise*/
+	display: block;
     max-width: 25%;
     width: auto;
     height: auto;
