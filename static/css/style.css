@@ -84,9 +84,13 @@ p {
     background-color: antiquewhite;
 }
 
-#textBody {
+/*#textBody {
 	position: relative;
 }
+
+#content {
+	display: flow-root;
+}*/
 
 .myAc {
     list-style: none;
