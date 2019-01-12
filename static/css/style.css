@@ -74,6 +74,29 @@ p {
     padding-right: 10px; */
 }
 
+.myButton {
+    border: 1px solid greenyellow;
+    border-radius: 1rem;
+    background-color: greenyellow;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.myButton a {
+    text-decoration: none;
+}
+
+#learnMore {
+    animation: blinker 4s linear infinite;
+    font-weight: 1000;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
 #sideBar {
     max-width: 35%;
     float: right;
@@ -142,6 +165,16 @@ ul li .ac-item-bd {
     font-family: 'Oswald', sans-serif;
 }
 
+.tag-green {
+    font-size: 10px;
+    background-color: rgb(29, 177, 29);
+    border-radius: 2.0em;
+    padding: 0 5px;
+    color: white;
+    font-weight: 1000;
+    white-space: nowrap;
+}
+
 /* 
 #VHMC {
     width: auto;
@@ -154,7 +187,7 @@ ul li .ac-item-bd {
     height: auto;
     position: fixed;
     right: 1%;
-    bottom: 0;
+    bottom: 10px;
     cursor: pointer;
     margin-top: 1rem;
     margin-bottom: 1rem;
